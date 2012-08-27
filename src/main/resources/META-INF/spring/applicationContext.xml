@@ -79,14 +79,4 @@
         <constructor-arg value="a7e8ccc62d1d4127bcfd822a33496943"/>
     </bean>
 
-    <bean id="recurlyRestTemplate" class="za.co.trf.recurly.api.implementation.RecurlyRestTemplate">
-        <constructor-arg type="java.lang.String" value="ffff54a93b3e450a8316a56671e5efff"/>
-    </bean>
-
-    <bean id="recurlyBase" class="za.co.trf.recurly.api.implementation.RecurlyServiceBase"
-          abstract="true" p:recurlyRestTemplate-ref="recurlyRestTemplate"/>
-
-    <bean id="recurlyAccountService"
-          class="za.co.trf.recurly.api.implementation.RecurlyAccountServiceImpl" parent="recurlyBase"/>
-
 </beans>
