@@ -27,3 +27,5 @@ enum constant --name ADMIN --permitReservedWords
 focus --class ~.domain.User
 // [failed] field enum --fieldName role --type ~.domain.UserRole --notNull --enumType ORDINAL
 field enum --fieldName role --type ~.domain.UserRole --notNull --enumType ORDINAL --permitReservedWords
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-08-04 22:41:14

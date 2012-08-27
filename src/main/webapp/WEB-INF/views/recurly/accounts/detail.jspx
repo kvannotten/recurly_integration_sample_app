@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+
+    <page:show id="ps_za_co_trf_recurly_sample_domain_User" object="${account}" path="/recurly/accounts" create="false">
+        <field:display field="accountCode" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+        <field:display field="firstName" label="Fisrt Name" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+        <field:display field="lastName" label="Last Name" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+        <field:display field="username" label="Username" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+        <field:display field="email" label="Email" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+        <field:display field="companyName" label="Company" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+        <field:display field="balanceInCents" label="balance" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+        <field:display field="billingInformation" label="Billing Information" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+        <field:display field="createdAt" label="Date Created" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+        <field:display field="state" label="Account Status" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${account}"/>
+    </page:show>
+    
+</div>

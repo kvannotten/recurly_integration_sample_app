@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
+
+    <definition extends="default" name="recurly/accounts/detail">
+        <put-attribute name="body" value="/WEB-INF/views/recurly/accounts/detail.jspx"/>
+    </definition>
+
     <definition extends="default" name="recurly/accounts/index">
         <put-attribute name="body" value="/WEB-INF/views/recurly/accounts/index.jspx"/>
     </definition>
+
 </tiles-definitions>

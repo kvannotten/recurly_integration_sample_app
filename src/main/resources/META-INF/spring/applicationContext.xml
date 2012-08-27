@@ -75,12 +75,13 @@
     <!-- Recurly Integration Beans -->
 
     <bean id="recurlyJS" class="za.co.trf.recurly.js.RecurlyJS">
-        <!-- Private Key -->
+        <!-- Recurly JS Private Key -->
         <constructor-arg value="a7e8ccc62d1d4127bcfd822a33496943"/>
     </bean>
 
     <bean id="recurlyRestTemplate" class="za.co.trf.recurly.api.implementation.RecurlyRestTemplate">
-        <constructor-arg type="java.lang.String" value="ffff54a93b3e450a8316a56671e5efff"/>
+        <!-- Recurly Rest API Private Key -->
+        <constructor-arg type="java.lang.String" value="447f54a93b3e450a8316a56671e5e5fd"/>
     </bean>
 
     <bean id="recurlyBase" class="za.co.trf.recurly.api.implementation.RecurlyServiceBase"
