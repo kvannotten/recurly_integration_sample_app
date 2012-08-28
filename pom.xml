@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
-    <groupId>za.co.trf.recurly.sample</groupId>
+    <groupId>com.github.tfoxcroft</groupId>
     <artifactId>recurly-integration-sample-app</artifactId>
-    <packaging>war</packaging>
     <version>2.1.3</version>
-    <name>recurly-integration-sample-app</name>
+    <packaging>war</packaging>
+
+    <name>Recurly Integration Sample Application</name>
+    <description>Sample web application demonstrating the use of the Recurly Client Library</description>
+    <url>https://github.com/tfoxcroft/recurly_integration_sample_app</url>
+
+    <licenses>
+        <license>
+            <name>MIT license</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git@github.com:tfoxcroft/recurly_integration_sample_app.git</connection>
+        <url>scm:git@github.com:tfoxcroft/recurly_integration_sample_app.git</url>
+        <developerConnection>scm:git@github.com:tfoxcroft/recurly_integration_sample_app.git</developerConnection>
+    </scm>
+
+    <developers>
+    </developers>
+
     <properties>
         <aspectj.version>1.7.0.RC1</aspectj.version>
         <java.version>1.6</java.version>
@@ -16,7 +37,9 @@
         <slf4j.version>1.6.6</slf4j.version>
         <spring.version>3.1.2.RELEASE</spring.version>
         <spring-security.version>3.1.2.RELEASE</spring-security.version>
+        <recurly.integration.library.version>2.1.0</recurly.integration.library.version>
     </properties>
+    
     <repositories>
         <repository>
             <id>spring-maven-release</id>
@@ -345,7 +368,7 @@
         <dependency>
             <groupId>com.github.tfoxcroft</groupId>
             <artifactId>recurly-integration-library</artifactId>
-            <version>2.1.0</version>
+            <version>${recurly.integration.library.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -492,5 +515,11 @@
                 </configuration>
             </plugin>
         </plugins>
+        <resources>
+          <resource>
+            <directory>src/main/resources</directory>
+            <filtering>true</filtering>
+          </resource>
+        </resources>
     </build>
 </project>

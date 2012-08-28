@@ -21,6 +21,13 @@ body {
     text-decoration: none
 }
 
+#header .recurly-lib-version {
+    text-align: center;
+    font-size: 1.25em;
+    color: #63117F;
+    padding-top: 10px;
+}
+
 #header-menu {
     text-align: center;
     padding: 20px;
